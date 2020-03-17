@@ -34,7 +34,7 @@ Visually, we can see that regions with lower temperature and higher humidity see
 
 - For Italy, regions with temperature higher than 15 degree Celsius and 75% humidity encounters less spread of covid-19 cases than others. 
 
-- A research recently undertaken found a striking similarity between the temperature and humidity between regions that have major coronavirus outbreaks. They are located along the same temperature zone in the northern hemisphere. It includes outbreak epicenters such as China’s central province of Hubei, South Korea, Japan, Iran, Northwestern America and Northern Italy. It is found that the places share an average temperature of 5°C to 11°C (41°F to 52°F) and 47% to 79% humidity.
+- A research recently undertaken (see Acknowledgements) found a striking similarity between the temperature and humidity between regions that have major coronavirus outbreaks. They are located along the same temperature zone in the northern hemisphere. It includes outbreak epicenters such as China’s central province of Hubei, South Korea, Japan, Iran, Northwestern America and Northern Italy. It is found that the places share an average temperature of 5°C to 11°C (41°F to 52°F) and 47% to 79% humidity.
 
 - Our hypothesis, therefore, is that area with average temperature and humidity level higher than these regions will see a decrease in the spread of the virus. 
 
@@ -56,9 +56,9 @@ Visually, we can see that regions with lower temperature and higher humidity see
 
 - Naive OLS estimate is utilized for simplicity and ease of interpretation; 
 
-**Model 1 for Infected cases**: log (Number of cases on Mar 16) = α(T emperature − 15C) + β(Humidity − 75%) + \(\epsilon\)
+**Model 1 for Infected cases**: log (Number of cases on Mar 16) = α(T emperature − 15C) + β(Humidity − 75%) + error term
 
-**Model 2 for Growth rate**: log (Cases on Mar 16/ Cases on Mar 3) = α(T emperature − 15C) + β(Humidity − 75%) + \(\epsilon\)
+**Model 2 for Growth rate**: log (Cases on Mar 16/ Cases on Mar 3) = α(T emperature − 15C) + β(Humidity − 75%) + error term
 
 - For expansion of research, more complex models with proper causal analysis controlling for confounding variables should be created to capture the true effect of temperature and humidity on the spread of coronavirus cases.  
 
@@ -95,6 +95,7 @@ Visually, we can see that regions with lower temperature and higher humidity see
 - **Other metrics** than R-squared to capture the causal impact 
 - **Confounding factors**: since there are so many unknown unknowns about the coronavirus, it's hard to pinpoint all the ommitted variables that might bias this estimate. One example is the spatial autocorrelation in the data. Italy has a lean and long shape along which are large plains, valleys and mountains which might also be influencing the climate and how the virus spreads. A causal analysis to untangle these confounding variables from our model can help to  gauge the true estimates of how temperature and humidity is driving the number of cases;
 - **Data issues**: such as whether we can trust the data updated at the individual regional and state level.
+- **Other countries**: how other tropical countries are dealing with the virus might be telling in whether heat can help in the fight against coronavirus. Malaysia has recently locked down the country due to a large outbreak but that was mainly due to a recent festival gathering. Other countries such as Laos, Cambodia, Vietnam and African countries seem to have coped well with the disease thus far. 
 
 ## Acknowledgement: 
 
