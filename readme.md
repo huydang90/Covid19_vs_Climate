@@ -56,25 +56,28 @@ Visually, we can see that regions with lower temperature and higher humidity see
 
 - Naive OLS estimate is utilized for simplicity and ease of interpretation; 
 
-**Model 1 for Infected cases**: log (Number of cases on Mar 16) = α(T emperature − 15C) + β(Humidity − 75%) + \epsilon 
+**Model 1 for Infected cases**: log (Number of cases on Mar 16) = α(T emperature − 15C) + β(Humidity − 75%) + \(\epsilon\)
 
-**Model 2 for Growth rate**: log (Cases on Mar 16/ Cases on Mar 3) = α(T emperature − 15C) + β(Humidity − 75%) + \epsilon
+**Model 2 for Growth rate**: log (Cases on Mar 16/ Cases on Mar 3) = α(T emperature − 15C) + β(Humidity − 75%) + \(\epsilon\)
 
 - For expansion of research, more complex models with proper causal analysis controlling for confounding variables should be created to capture the true effect of temperature and humidity on the spread of coronavirus cases.  
 
 ## Results and Interpretation: 
 
-####For Italy: 
+#### For Italy: 
 - R-squared shows that the model can explain for about 27-34% of variations in the number of coronavirus cases, which is expected, considering there are many other factors influencing the spread of the disease; 
 - A one-unit increase in temperature in Italian regions with above 15 degree Celcius and 80% humidity will lead to 67.14% decrease in the number of covid-19 cases in comparison to regions that are below this threshold;
 - A one-unit increase in humidity in Italian region with above 75% humidity and 15 degree Celsius will lead to 16.26% decrease in the number of covid-19 cases in comparison to regions that are below this threshold.
-![alt text](https://raw.githubusercontent.com/huydang90/Covid19_vs_Climate/master/figures/infected_cases.png)
+
+![alt text](https://raw.githubusercontent.com/huydang90/Covid19_vs_Climate/master/figures/Infected_cases_stats.png)
 
 
-####For Germany: 
+#### For Germany: 
 - A one-unit increase in temperature in German regions with above 16 degree Celcius and 75% humidity will lead to 42.15% decrease in the number of covid-19 cases in comparison to regions that are below this threshold;
 - A one-unit increase in humidity in German region with above 75% humidity and 16 degree Celsius will lead to 15.26% decrease in the number of covid-19 cases in comparison to regions that are below this threshold.
 - In Germany case, however, the effect is not statistically significant (see Analysis)
+
+![alt text](https://raw.githubusercontent.com/huydang90/Covid19_vs_Climate/master/figures/infected_cases_germany.png)
 
 ## Analysis: 
 - Lombardy is the epicenter of the diseases from where it spreads throughout the country. It will, naturally, have more cases than other regions. 
